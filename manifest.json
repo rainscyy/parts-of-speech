@@ -1,0 +1,184 @@
+[
+  {
+    "id": "wake-1",
+    "boardLabel": "Create App Component",
+    "verb": "Wake",
+    "title": "Dust sphere",
+    "interaction": "Click to unfold; move to scatter the dust. Click again to collapse.",
+    "renderer": "WebGL",
+    "source": "studies/wake-1/App.tsx",
+    "entry": "studies/wake-1/index.html",
+    "thumbnail": "thumbnails/wake-1.jpg",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "assets": "Embedded data URLs; no Figma asset URLs required",
+    "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/wake-study/dust-wake/App.tsx",
+    "figmaUrl": "https://www.figma.com/make/cVJa5LUUoA4miUBTj3984l/Create-App-Component",
+    "cover": "thumbnails/wake-1.jpg"
+  },
+  {
+    "id": "wake-2",
+    "boardLabel": "3D Wake Interaction Effect",
+    "verb": "Wake",
+    "title": "Particle light",
+    "interaction": "Click to unfold; move to guide the light. Click again to collapse.",
+    "renderer": "Canvas 2D / perspective",
+    "source": "studies/wake-2/App.tsx",
+    "entry": "studies/wake-2/index.html",
+    "thumbnail": "thumbnails/wake-2.jpg",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "assets": "Embedded data URLs; no Figma asset URLs required",
+    "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/wake-study/particle-wake/App.tsx",
+    "figmaUrl": "https://www.figma.com/make/RvN2joE4KzKwJF0VMkllvr/3D-Wake-Interaction-Effect",
+    "cover": "thumbnails/wake-2.jpg"
+  },
+  {
+    "id": "encircle-4",
+    "boardLabel": "Encircle4",
+    "verb": "Encircle",
+    "title": "Linked figures",
+    "interaction": "Click or drag the ring to rotate and cycle through ten illustrated styles.",
+    "renderer": "Canvas 2D",
+    "source": "studies/encircle-4/App.tsx",
+    "entry": "studies/encircle-4/index.html",
+    "thumbnail": "thumbnails/encircle-4.jpg",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "assets": "Embedded data URLs; no Figma asset URLs required",
+    "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/encircle/App.tsx",
+    "cover": "thumbnails/encircle-4.jpg"
+  },
+  {
+    "id": "encircle-1",
+    "boardLabel": "Encircle1",
+    "verb": "Encircle",
+    "title": "Serif orbit",
+    "interaction": "Click to unfold the word, then circle your pointer to lead the letters around the ring.",
+    "renderer": "Canvas 2D",
+    "source": "studies/encircle-1/App.tsx",
+    "entry": "studies/encircle-1/index.html",
+    "thumbnail": "thumbnails/encircle-1.jpg",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "assets": "Embedded data URLs; no Figma asset URLs required",
+    "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/encircle-orbit/App.tsx",
+    "cover": "thumbnails/encircle-1.jpg"
+  },
+  {
+    "id": "encircle-2",
+    "boardLabel": "Encircle2",
+    "verb": "Encircle",
+    "title": "Line orbit",
+    "interaction": "Click to unfold the word, then circle your pointer to lead the letters around the ring.",
+    "renderer": "Canvas 2D",
+    "source": "studies/encircle-2/App.tsx",
+    "entry": "studies/encircle-2/index.html",
+    "thumbnail": "thumbnails/encircle-2.jpg",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "assets": "Embedded data URLs; no Figma asset URLs required",
+    "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/encircle-orbit/figma-loop.txt",
+    "cover": "thumbnails/encircle-2.jpg"
+  },
+  {
+    "id": "encircle-3",
+    "boardLabel": "Encircle3",
+    "verb": "Encircle",
+    "title": "Film transport",
+    "interaction": "Drag the glass reel right for outlines or left for solid letters. Reach an end to print; drag the finished films.",
+    "renderer": "Canvas 2D",
+    "source": "studies/encircle-3/App.tsx",
+    "entry": "studies/encircle-3/index.html",
+    "thumbnail": "thumbnails/encircle-3.jpg",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "assets": "Embedded data URLs; no Figma asset URLs required",
+    "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/encircle-film/App.tsx",
+    "cover": "thumbnails/encircle-3.jpg"
+  },
+  {
+    "id": "punch-1",
+    "boardLabel": "Punch1",
+    "verb": "Punch",
+    "title": "Ball impact",
+    "interaction": "Click anywhere\u2014above, below, or beside the lettering\u2014to knock the balls away from your pointer.",
+    "renderer": "Canvas 2D",
+    "source": "studies/punch-1/App.tsx",
+    "entry": "studies/punch-1/index.html",
+    "thumbnail": "thumbnails/punch-1.jpg",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "assets": "Embedded data URLs; no Figma asset URLs required",
+    "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/punch-balls/App.tsx",
+    "cover": "covers/punch-1.png"
+  },
+  {
+    "id": "punch-3",
+    "boardLabel": "Punch3",
+    "verb": "Punch",
+    "title": "Tomato gloves",
+    "interaction": "Click to bring the tomato gloves together and reveal a splashed word.",
+    "renderer": "Canvas 2D",
+    "source": "studies/punch-3/App.tsx",
+    "entry": "studies/punch-3/index.html",
+    "thumbnail": "thumbnails/punch-3.jpg",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "assets": "Embedded data URLs; no Figma asset URLs required",
+    "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/punch-tomato/App.tsx",
+    "cover": "covers/punch-3.png"
+  },
+  {
+    "id": "punch-4",
+    "boardLabel": "Punch4",
+    "verb": "Punch",
+    "title": "Inflated lettering",
+    "interaction": "Press and drag on the pink letters to dent their surface; release to recover.",
+    "renderer": "WebGL",
+    "source": "studies/punch-4/App.tsx",
+    "entry": "studies/punch-4/index.html",
+    "thumbnail": "thumbnails/punch-4.jpg",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "assets": "Embedded data URLs; no Figma asset URLs required",
+    "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/punch-dent/App.tsx",
+    "cover": "covers/punch-4.png"
+  },
+  {
+    "id": "wipe-1",
+    "boardLabel": "Wipe1",
+    "verb": "Wipe",
+    "title": "Silver gel",
+    "interaction": "Drag across the lettering to spread it into a thin, reflective film.",
+    "renderer": "WebGL",
+    "source": "studies/wipe-1/App.tsx",
+    "entry": "studies/wipe-1/index.html",
+    "thumbnail": "thumbnails/wipe-1.jpg",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "assets": "Embedded data URLs; no Figma asset URLs required",
+    "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/wipe-gel/App.tsx",
+    "cover": "thumbnails/wipe-1.jpg"
+  }
+]

@@ -1,0 +1,2 @@
+const fs=require('fs'),path=require('path'),esbuild=require('esbuild');
+for(const s of JSON.parse(fs.readFileSync(path.join(__dirname,'manifest.json'),'utf8'))){const dir=path.join(__dirname,'studies',s.id);esbuild.buildSync({entryPoints:[path.join(dir,'main.tsx')],outfile:path.join(dir,'app.js'),bundle:true,minify:true,jsx:'automatic',define:{'process.env.NODE_ENV':'"production"'},target:'es2020'});}

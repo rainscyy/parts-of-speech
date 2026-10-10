@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Encircle — Linked figures</title><style>html,body,#root{margin:0;width:100%;height:100%;overflow:hidden}*{box-sizing:border-box}</style><div id="root"></div><script src="app.js"></script><script>if(window.parent!==window){window.addEventListener("wheel",function(e){if(e.ctrlKey)return;e.preventDefault();parent.postMessage({type:"study-wheel",delta:Math.abs(e.deltaX)>Math.abs(e.deltaY)?e.deltaX:e.deltaY},location.origin)},{passive:false})}</script><script>
+// Forward intentional horizontal drags; ordinary hovering and presses stay in the artwork.
+if(window.parent!==window){
+ const protectedArtwork=true;let gesture=null,skipClickUntil=0;
+ const send=(type,extra={})=>parent.postMessage({type,...extra},location.origin);
+ window.addEventListener('pointerdown',e=>{if(e.button!==0||e.target.closest('button,a,input'))return;if(protectedArtwork&&e.target.closest('canvas,.encircle-play'))return;gesture={id:e.pointerId,x:e.screenX,y:e.screenY,target:e.target,dragging:false}},true);
+ window.addEventListener('pointermove',e=>{if(!gesture||gesture.id!==e.pointerId)return;const dx=e.screenX-gesture.x,dy=e.screenY-gesture.y;
+  if(!gesture.dragging){if(Math.abs(dx)<12||Math.abs(dx)<Math.abs(dy)*1.3)return;gesture.dragging=true;send('study-drag-start');gesture.target.dispatchEvent(new PointerEvent('pointercancel',{pointerId:e.pointerId,bubbles:true}));document.documentElement.setPointerCapture(e.pointerId)}
+  e.preventDefault();e.stopImmediatePropagation();send('study-drag-move',{dx,width:innerWidth});
+ },true);
+ function end(e){if(!gesture||gesture.id!==e.pointerId)return;const moved=gesture.dragging;gesture=null;if(moved){skipClickUntil=performance.now()+400;e.preventDefault();e.stopImmediatePropagation();if(document.documentElement.hasPointerCapture(e.pointerId))document.documentElement.releasePointerCapture(e.pointerId);send('study-drag-end')}}
+ window.addEventListener('pointerup',end,true);window.addEventListener('pointercancel',e=>{if(e.isTrusted)end(e)},true);
+ window.addEventListener('click',e=>{if(performance.now()<skipClickUntil){e.preventDefault();e.stopImmediatePropagation()}},true);
+ window.addEventListener('blur',()=>{if(gesture?.dragging)send('study-drag-end');gesture=null});
+}
+</script></html>
