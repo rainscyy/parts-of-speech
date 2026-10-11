@@ -16,7 +16,8 @@
     "assets": "Embedded data URLs; no Figma asset URLs required",
     "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/wake-study/dust-wake/App.tsx",
     "figmaUrl": "https://www.figma.com/make/cVJa5LUUoA4miUBTj3984l/Create-App-Component",
-    "cover": "thumbnails/wake-1.jpg"
+    "cover": "thumbnails/wake-1.jpg",
+    "theme": "Boot"
   },
   {
     "id": "wake-2",
@@ -35,7 +36,8 @@
     "assets": "Embedded data URLs; no Figma asset URLs required",
     "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/wake-study/particle-wake/App.tsx",
     "figmaUrl": "https://www.figma.com/make/RvN2joE4KzKwJF0VMkllvr/3D-Wake-Interaction-Effect",
-    "cover": "thumbnails/wake-2.jpg"
+    "cover": "thumbnails/wake-2.jpg",
+    "theme": "Boot"
   },
   {
     "id": "encircle-4",
@@ -53,7 +55,8 @@
     ],
     "assets": "Embedded data URLs; no Figma asset URLs required",
     "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/encircle/App.tsx",
-    "cover": "thumbnails/encircle-4.jpg"
+    "cover": "thumbnails/encircle-4.jpg",
+    "theme": "Friend"
   },
   {
     "id": "encircle-1",
@@ -71,7 +74,8 @@
     ],
     "assets": "Embedded data URLs; no Figma asset URLs required",
     "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/encircle-orbit/App.tsx",
-    "cover": "thumbnails/encircle-1.jpg"
+    "cover": "thumbnails/encircle-1.jpg",
+    "theme": "Friend"
   },
   {
     "id": "encircle-2",
@@ -89,7 +93,8 @@
     ],
     "assets": "Embedded data URLs; no Figma asset URLs required",
     "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/encircle-orbit/figma-loop.txt",
-    "cover": "thumbnails/encircle-2.jpg"
+    "cover": "thumbnails/encircle-2.jpg",
+    "theme": "Friend"
   },
   {
     "id": "encircle-3",
@@ -107,14 +112,15 @@
     ],
     "assets": "Embedded data URLs; no Figma asset URLs required",
     "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/encircle-film/App.tsx",
-    "cover": "thumbnails/encircle-3.jpg"
+    "cover": "thumbnails/encircle-3.jpg",
+    "theme": "Friend"
   },
   {
     "id": "punch-1",
     "boardLabel": "Punch1",
     "verb": "Punch",
     "title": "Ball impact",
-    "interaction": "Click anywhere\u2014above, below, or beside the lettering\u2014to knock the balls away from your pointer.",
+    "interaction": "Click anywhere—above, below, or beside the lettering—to knock the balls away from your pointer.",
     "renderer": "Canvas 2D",
     "source": "studies/punch-1/App.tsx",
     "entry": "studies/punch-1/index.html",
@@ -125,7 +131,8 @@
     ],
     "assets": "Embedded data URLs; no Figma asset URLs required",
     "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/punch-balls/App.tsx",
-    "cover": "covers/punch-1.png"
+    "cover": "covers/punch-1.png",
+    "theme": "Click"
   },
   {
     "id": "punch-3",
@@ -143,7 +150,8 @@
     ],
     "assets": "Embedded data URLs; no Figma asset URLs required",
     "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/punch-tomato/App.tsx",
-    "cover": "covers/punch-3.png"
+    "cover": "covers/punch-3.png",
+    "theme": "Click"
   },
   {
     "id": "punch-4",
@@ -161,7 +169,8 @@
     ],
     "assets": "Embedded data URLs; no Figma asset URLs required",
     "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/punch-dent/App.tsx",
-    "cover": "covers/punch-4.png"
+    "cover": "covers/punch-4.png",
+    "theme": "Click"
   },
   {
     "id": "wipe-1",
@@ -179,6 +188,7 @@
     ],
     "assets": "Embedded data URLs; no Figma asset URLs required",
     "provenance": "/Users/raine/Documents/ChatGPT/26Fall/output/wipe-gel/App.tsx",
-    "cover": "thumbnails/wipe-1.jpg"
+    "cover": "thumbnails/wipe-1.jpg",
+    "theme": "Swipe"
   }
 ]
