@@ -26,7 +26,7 @@
     "verb": "Contextualize",
     "title": "The context crawler",
     "theme": "Context",
-    "entry": "studies/contextualize-3/index.html",
+    "entry": "studies/contextualize-3/index.html?v=compact-panels-2",
     "renderer": "HTML / Canvas",
     "static": true,
     "layout": "landscape",

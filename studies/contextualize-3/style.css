@@ -69,3 +69,14 @@ h1,#collector h2{font-size:var(--type-display);height:calc(var(--type-display)*2
 .agent,.agent.square,.agent.diamond{width:64px;height:64px}.agent.hex{width:54px;height:62px}.agent.diamond:before{border-radius:12px}
 .accent-shape.star{width:48px;height:48px;top:1%;left:65%}.accent-shape.triangle{width:68px;height:59px;bottom:4%}.accent-shape.semicircle{width:30px;height:60px;top:76%}
 @media(max-width:750px){header{padding:0 12px;font-size:8px}header button{font-size:9px}#stage{height:auto;min-height:0;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 320px auto;gap:24px;padding:64px 6% 24px;--type-display:30px}.intro{grid-column:1;grid-row:1;min-height:215px}#collector{grid-column:1;grid-row:2;height:auto;top:auto;left:auto;width:auto}#composer{grid-column:1;grid-row:3;bottom:auto;left:auto;width:auto}.intro p,#collector .panel-description{font-size:13px}.agent,.agent.square,.agent.diamond{width:46px;height:46px}.agent.hex{width:42px;height:48px}.accent-shape.star{width:38px;height:38px}.accent-shape.triangle{width:46px;height:40px}.accent-shape.semicircle{display:none}footer{height:auto;min-height:44px}.legend{font-size:8px}#status{font-size:9px}}
+
+/* Reveal the poster around compact, content-sized text blocks. */
+.intro,#collector{align-self:start;justify-self:start;width:min(100%,380px);height:auto;min-height:0;padding:16px 18px}
+#collector,#collector:has(.chip){height:auto;max-height:calc(100svh - 184px)}
+h1,#collector h2{height:auto;margin:12px 0 14px}
+h1{font-size:clamp(28px,2.9vw,36px)}
+#collector h2{font-size:clamp(24px,2.55vw,32px)}
+.intro p,#collector .panel-description{font-size:13px;line-height:1.6;max-width:30ch}
+#composer{align-self:end;justify-self:start;width:min(100%,380px);padding:12px 18px 10px}
+#tray:empty{padding:0}
+@media(max-width:750px){#stage{grid-template-rows:auto auto auto}.intro,#collector{width:100%;max-width:380px;min-height:0}#collector,#collector:has(.chip){max-height:360px}#composer{width:100%;max-width:380px}h1{font-size:30px}#collector h2{font-size:26px}}
