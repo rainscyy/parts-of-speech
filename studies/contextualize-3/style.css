@@ -52,3 +52,20 @@ body,.half.white,.intro,#composer{background:#f4f3eb}
 /* Compact, single-line context heading. */
 #collector h2{font-size:clamp(24px,2.6vw,38px);height:auto;line-height:1.3;white-space:nowrap;margin:18px 0 20px}
 @media(max-width:750px){#collector h2{font-size:26px}}
+
+/* Give the embedded interaction its own breathing room. */
+header{height:48px;padding:0 24px;font-size:10px}header button{font-size:10px}
+footer{height:44px;padding:0 24px;font-size:9px}.legend{font-size:9px;gap:7px}#status{font-size:10px}
+#stage{height:calc(100svh - 92px);min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto;gap:24px 10%;padding:64px 4% 28px;--type-display:clamp(28px,3vw,38px);--type-body:14px;--type-label:10px}
+.column{top:0;padding:8px 18px;gap:8px 12px}.token{font-size:clamp(20px,2.1vw,30px);line-height:1.6;letter-spacing:-.05em}
+.intro,#collector,#composer{position:relative;inset:auto;width:auto;min-height:0;max-height:none;height:auto;margin:0;padding:20px 22px;z-index:2}
+.intro{grid-column:1;grid-row:1;overflow:hidden}#collector{grid-column:2;grid-row:1 / 3;overflow:auto}
+h1,#collector h2{font-size:var(--type-display);height:calc(var(--type-display)*2.5);margin:14px 0 16px;line-height:1.25}
+#collector h2{font-size:clamp(24px,2.7vw,34px);white-space:nowrap;height:calc(var(--type-display)*2.5)}
+.eyebrow,.panel-label>span:first-child,.panel-label #count{font-size:10px;letter-spacing:.04em}
+.intro p,#collector .panel-description{font-size:14px;height:auto;line-height:1.65;max-width:34ch}
+#composer{grid-column:1;grid-row:2;padding:14px 22px 12px;border-top-width:1px}#composer label{font-size:10px}.input-row{margin:5px 0 9px}.input-row input{font-size:14px;padding:10px 0}.input-row button{width:34px;height:32px;font-size:22px}.suggestions{gap:6px}.suggestions button{font-size:10px;padding:5px 7px}
+#tray{padding-top:18px}.chip{font-size:13px}.chip small{font-size:9px}#answer{font-size:14px}
+.agent,.agent.square,.agent.diamond{width:64px;height:64px}.agent.hex{width:54px;height:62px}.agent.diamond:before{border-radius:12px}
+.accent-shape.star{width:48px;height:48px;top:1%;left:65%}.accent-shape.triangle{width:68px;height:59px;bottom:4%}.accent-shape.semicircle{width:30px;height:60px;top:76%}
+@media(max-width:750px){header{padding:0 12px;font-size:8px}header button{font-size:9px}#stage{height:auto;min-height:0;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 320px auto;gap:24px;padding:64px 6% 24px;--type-display:30px}.intro{grid-column:1;grid-row:1;min-height:215px}#collector{grid-column:1;grid-row:2;height:auto;top:auto;left:auto;width:auto}#composer{grid-column:1;grid-row:3;bottom:auto;left:auto;width:auto}.intro p,#collector .panel-description{font-size:13px}.agent,.agent.square,.agent.diamond{width:46px;height:46px}.agent.hex{width:42px;height:48px}.accent-shape.star{width:38px;height:38px}.accent-shape.triangle{width:46px;height:40px}.accent-shape.semicircle{display:none}footer{height:auto;min-height:44px}.legend{font-size:8px}#status{font-size:9px}}
