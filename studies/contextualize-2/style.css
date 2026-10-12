@@ -1,0 +1,59 @@
+*{box-sizing:border-box}body{margin:0;background:#e9e7df;color:#363a31;font-family:Georgia,serif}header,footer{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 4vw;font:10px 'Courier New',monospace;letter-spacing:.09em}header span:nth-child(2){font:italic 20px Georgia;letter-spacing:0}main{height:calc(100svh - 128px);min-height:480px;display:flex;justify-content:center;padding:5px 18px}#page{position:relative;height:100%;aspect-ratio:3/4;max-width:100%;overflow:hidden;background:#f7f5eb;box-shadow:0 8px 30px #504e3810;cursor:none;outline:none;touch-action:none}#page:focus-visible{outline:1px solid #6d8f73}.landscape,#paper,#marks{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.landscape{object-fit:cover}#paper{z-index:1}.folio,.page-number{position:absolute;z-index:4;font:9px 'Courier New',monospace;letter-spacing:.15em;background:#f7f5ebd9;padding:5px 8px}.folio{top:4%;left:8%}.page-number{bottom:3%;left:45%}#poem{position:absolute;inset:0;z-index:3}.phrase{position:absolute;border:0;background:none;text-align:left;padding:0;color:#292e28;font:clamp(12px,2.15vh,23px)/1.6 Georgia,serif;white-space:nowrap;cursor:inherit;letter-spacing:.015em}.phrase .strip{background:#f8f5e9;padding:3px 6px;box-decoration-break:clone;-webkit-box-decoration-break:clone;box-shadow:1px 2px 0 #4a443810;clip-path:polygon(0 4%,28% 1%,62% 4%,99% 0,100% 94%,72% 100%,30% 96%,1% 100%)}.phrase .hidden{display:inline-block;max-width:0;opacity:0;overflow:hidden;vertical-align:bottom;transition:max-width 1.2s ease,opacity 1.1s}.phrase.read .hidden{max-width:310px;opacity:1}.phrase:focus-visible{outline:1px dashed #277b63;outline-offset:6px}#marks{z-index:4;overflow:visible}.annotation{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.2;opacity:.78;stroke-dasharray:1500;stroke-dashoffset:1500;animation:draw 1.8s ease forwards}@keyframes draw{to{stroke-dashoffset:0}}#cursor{position:absolute;z-index:8;width:7px;height:7px;border:1px solid #786453;border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);display:none}#restart{font:25px Georgia;border:0;background:none;color:#656b60;cursor:pointer;padding:5px 20px;transition:transform .3s}#restart:hover{transform:rotate(-40deg)}footer span:last-child{font-style:italic;letter-spacing:0;font-family:Georgia} @media(max-width:600px){header,footer{padding:0 18px;height:60px;font-size:8px}header span:nth-child(2){font-size:17px}main{height:calc(100svh - 120px);min-height:0;align-items:center;padding:0 12px}#page{width:100%;height:auto;aspect-ratio:3/4}.phrase{font-size:clamp(11px,3.05vw,18px)}.folio,.page-number{font-size:7px}#cursor{display:none!important}}@media(prefers-reduced-motion:reduce){.annotation{animation:none;stroke-dashoffset:0}.phrase .hidden{transition:none}}
+
+/* A raised, die-cut sheet floats above a neutral backing surface. */
+#page{background:#cecec8;box-shadow:0 14px 24px #302d2824;overflow:visible}
+.landscape,#paper{clip-path:inset(4.8% 6% 5.8%)}
+#cutpaper{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none;filter:drop-shadow(0 2px 0 #b8ad94) drop-shadow(1px 7px 4px #514a3c66)}
+.phrase{font-size:clamp(11px,1.85vh,20px);line-height:1.25}
+.phrase .strip{background:transparent;padding:0;box-shadow:none;clip-path:none}
+.folio,.page-number{background:transparent}
+@media(max-width:600px){.phrase{font-size:clamp(10px,2.7vw,16px)}}
+/* One coordinate system keeps printed text attached to its physical paper strip. */
+#cutpaper{pointer-events:none;filter:drop-shadow(0 2px 0 #baad94) drop-shadow(1px 6px 3px #55463055)}
+#cutpaper .phrase{pointer-events:all;cursor:crosshair;font-size:21px}
+#cutpaper .phrase:focus-visible{outline:none;filter:drop-shadow(0 0 2px #408d70)}
+#page{cursor:crosshair;aspect-ratio:3/4;width:auto;max-width:none}
+#poem{display:none}.landscape,#paper{clip-path:inset(0)}
+@media(max-width:600px){#page{width:100%;height:auto;max-height:100%;aspect-ratio:3/4}}
+
+/* Soft colour glimpses behind the connected paper; no drawn outlines. */
+.landscape{filter:blur(7px) saturate(.8) hue-rotate(-7deg);object-fit:cover;object-position:48% center}
+#page{overflow:hidden}
+#cutpaper{filter:drop-shadow(0 1px 0 #c4b99f) drop-shadow(0 3px 2px #55463038)}
+#marks{display:none}
+
+/* Grain is applied AFTER softening, preserving a tactile printed surface. */
+.landscape{filter:blur(2.5px) saturate(.88) hue-rotate(-7deg) url(#scene-grain)}
+
+.page-number{left:8%;bottom:3.5%;font-size:9px;line-height:1.8;letter-spacing:.045em}.folio{font:italic 17px Georgia,serif;letter-spacing:.05em}#cutpaper .phrase text{font-size:21px}
+
+@font-face{font-family:'Inknut Antiqua';src:url('assets/InknutAntiqua-Regular.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+#cutpaper .phrase text{font-family:'Inknut Antiqua',serif;font-weight:400;letter-spacing:-.011em}
+.folio,header span:nth-child(2){font-family:'Inknut Antiqua',serif;font-weight:400;font-style:normal}
+
+/* Open-book composition: broad margins, a protected gutter and layered page edges. */
+body{background:#dcdcd5;background-image:radial-gradient(ellipse at 50% 35%,#f0efe9 0%,#deded7 65%,#d3d4cd 100%)}
+header,footer{height:72px;color:#6e7168}
+main{height:calc(100svh - 144px);min-height:0;align-items:center;padding:20px 34px 32px}
+#page{width:min(1240px,92vw,calc((100svh - 205px)*1.5));height:auto;max-width:100%;aspect-ratio:3/2;overflow:hidden;border-radius:5px 10px 13px 7px;isolation:isolate;background:#eee7d5;box-shadow:0 2px 0 #d7d0bf,0 4px 0 #f1ead9,0 6px 0 #c8c0af,0 8px 0 #e8e1d0,0 10px 0 #bdb6a6,0 17px 19px #37382e24,0 36px 48px -20px #292b2750}
+#page::after{content:'';position:absolute;inset:0;z-index:6;pointer-events:none;background:linear-gradient(90deg,transparent 43%,#68604308 46%,#574e3720 48.7%,#322a203a 49.7%,#231e1755 50%,#fff7e426 50.35%,#746b4b1c 51.1%,transparent 56%)}
+.book-light{position:absolute;inset:0;z-index:5;pointer-events:none;background:linear-gradient(90deg,#6d62490c,transparent 3%,#fffced1a 20%,transparent 44%,transparent 55%,#fffbed12 80%,#60553e0d 99%),linear-gradient(0deg,#7064470e,transparent 3%,transparent 98%,#fff9e644)}
+#cutpaper{filter:drop-shadow(0 1px 0 #d0c5af) drop-shadow(0 2px 1.5px #4f42272e)}
+.folio{left:8.65%;top:12%;font-size:clamp(12px,1.65vw,21px);letter-spacing:.025em;padding:0}
+.page-number{left:8.65%;bottom:11%;font:clamp(6px,.7vw,9px)/1.8 'Courier New',monospace;letter-spacing:.01em;padding:0}
+.folio-left,.folio-right{position:absolute;bottom:5%;z-index:4;font:9px Georgia;color:#777262}.folio-left{left:8.65%}.folio-right{right:8%}
+.landscape{object-fit:cover;object-position:center}
+@media(max-width:600px){main{padding:10px;height:calc(100svh - 120px)}header,footer{height:60px}#page{width:100%;height:auto;aspect-ratio:3/2}.folio{font-size:10px}.page-number{font-size:5px}.folio-left,.folio-right{font-size:6px}}
+
+.context-word{opacity:.08;transition:opacity 1.2s ease}.phrase .note{opacity:.06;transition:opacity 1.4s ease}.phrase.read .context-word,.phrase.read .note{opacity:1}.page-number{bottom:7.7%;font-size:clamp(5px,.6vw,8px)}
+
+/* Fine spring rain belongs to the landscape beneath the torn paper. */
+#rain{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.raindrop{position:absolute;top:-15%;width:.7px;height:var(--length);background:linear-gradient(transparent,#b9d7d9 30%,#759b9c);opacity:var(--alpha);animation:rainfall var(--duration) linear infinite;animation-delay:var(--delay);will-change:transform}
+@keyframes rainfall{from{transform:translate3d(0,-60px,0)}to{transform:translate3d(-14px,1200px,0)}}
+@media(prefers-reduced-motion:reduce){.raindrop{animation:none;top:var(--still);opacity:.12}}
+
+#rain{z-index:3}.raindrop{width:1px;background:linear-gradient(transparent,#658b9a 18%,#658b9a 82%,transparent);filter:none}
+
+/* Fit the book to its embedded gallery viewport. */
+@media(min-width:601px){header,footer{height:40px}main{height:calc(100svh - 80px);padding:10px 26px 24px}#page{width:min(1240px,94vw,calc((100svh - 118px)*1.5))}}

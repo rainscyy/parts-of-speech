@@ -1,5 +1,40 @@
 [
   {
+    "id": "contextualize-1",
+    "verb": "Contextualize",
+    "title": "Produce / Context",
+    "theme": "Context",
+    "entry": "studies/contextualize-1/index.html",
+    "renderer": "HTML / Canvas",
+    "static": true,
+    "layout": "portrait",
+    "boardLabel": "Contextualize 1"
+  },
+  {
+    "id": "contextualize-2",
+    "verb": "Contextualize",
+    "title": "Hope / A landscape",
+    "theme": "Context",
+    "entry": "studies/contextualize-2/index.html",
+    "renderer": "HTML / Canvas",
+    "static": true,
+    "layout": "landscape",
+    "boardLabel": "Contextualize 2"
+  },
+  {
+    "id": "contextualize-3",
+    "verb": "Contextualize",
+    "title": "The context crawler",
+    "theme": "Context",
+    "entry": "studies/contextualize-3/index.html",
+    "renderer": "HTML / Canvas",
+    "static": true,
+    "layout": "landscape",
+    "boardLabel": "Contextualize 3",
+    "cover": "covers/contextualize-3.png",
+    "coverMode": "original"
+  },
+  {
     "id": "wake-1",
     "boardLabel": "Create App Component",
     "verb": "Wake",
@@ -120,7 +155,7 @@
     "boardLabel": "Punch1",
     "verb": "Punch",
     "title": "Ball impact",
-    "interaction": "Click anywhere—above, below, or beside the lettering—to knock the balls away from your pointer.",
+    "interaction": "Click anywhere\u2014above, below, or beside the lettering\u2014to knock the balls away from your pointer.",
     "renderer": "Canvas 2D",
     "source": "studies/punch-1/App.tsx",
     "entry": "studies/punch-1/index.html",
