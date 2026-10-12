@@ -1,5 +1,16 @@
 [
   {
+    "id": "contextualize-4",
+    "verb": "Contextualize",
+    "title": "Jianzi / A place in motion",
+    "theme": "Context",
+    "entry": "studies/contextualize-4/index.html",
+    "renderer": "HTML / Canvas",
+    "static": true,
+    "layout": "landscape",
+    "boardLabel": "Contextualize 4"
+  },
+  {
     "id": "contextualize-1",
     "verb": "Contextualize",
     "title": "Produce / Context",
